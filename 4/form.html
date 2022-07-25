@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Formlar</title>
+</head>
+<body>
+  <h1>Kayit Formu</h1>
+  <form action="server/kayit.js">
+   <p>
+   <label for="Ad">Adiniz</label>
+   <input id="Ad" type="text" required minlength="3"><br>
+
+   <label for="Soyad">Soyad</label >
+   <input id="Soyad" type="text" placeholder= "Soyadinizi giriniz">
+   </p>
+
+   <p>
+   <label for="Sifre">Sifreniz</label >
+   <input id="Sifre" type="password" >
+   </p>
+
+   <p>
+   <label for="deneyim">Deneyim</label >
+   <input id="deneyim" type="number" min="0" max="10" >
+   </p>
+
+   <p>
+    <label for="hobiler">Hobileriniz</label><br>
+    <label for="futbol">Futbol</label>
+    <input type="checkbox" name="futbol" id="futbol" value="futbol">
+    <label for="voleybol">Voleybol</label>
+    <input type="checkbox" name="voleybol" id="voleybol" value="voleybol">
+    <label for="basketbol">Basketbol</label>
+    <input type="checkbox" name="basketbol" id="basketbol" value="basketbol">
+   </p>
+
+   <p>
+    <label for="cinsiyet">Cinsiyet</label><br />
+
+    <input type="radio" name="cinsiyet" id="erkek" value="erkek">
+    <label for="erkek">Erkek</label><br>
+
+    <input type="radio" name="cinsiyet" id="kadin" value="bayan">
+    <label for="kadin">Kadin</label><br>
+   </p>
+
+   <p>
+    <label for="medeni">Medeni Hali</label><br />
+
+    <input type="radio" name="medeni_hali" id="evli" value="evli">
+    <label for="evli">Evli</label><br>
+
+    <input type="radio" name="medeni_hali" id="bekar" value="bekar">
+    <label for="bekar">Bekar</label><br>
+   </p>
+  
+    <p>
+       <label for="avatar">Avatar</label>
+       <input type="file" name="avatar" id ="avatar">
+    </p>
+
+     <p>
+        <label for="dogum">Dogum Tarihi</label>
+       <input type="date" name="dogum" id ="dogum">
+     </p>
+
+     <p>
+       <label for="dogum_yeri">Dogum Yeri</label>
+       <select name="dogum" id ="dogum_yeri">
+         <option value="1">Adana</option>
+         <option value="2">Adiyaman</option>
+         <option value="3">Afyon</option>
+         <option value="4">Agri</option>
+       </select>
+     </p>
+
+      <p>
+       <label for="adres">Adres</label><br />
+       <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
+      </p>
+
+
+   <input type="submit" value="Gonder">
+   <input type="button" value="Kontrol Et">
+   <input type="reset" value="Temizle">
+
+
+
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>
+</html>
