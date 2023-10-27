@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+        div{
+            background-color: beige;
+        }
+
+        span{
+            background-color: blueviolet;
+        }
+    </style>
+
+<body>
+    
+    <form action="server/kayit.php" method="post">
+        <input type="hidden" name="id" value="123">
+
+        <p>
+            <label for="Ad">Adiniz</label>
+            <input type="text" id="Ad" name="Ad" minlength="3" >
+        </p>
+
+        <p>
+            <label for="Soyad">Soyadiniz</label>
+            <input type="text" id="Soyad" name="Soyad" placeholder="Soyadinizi giriniz">
+        </p>
+
+
+        <p>
+            <label for="sifre">Sifreniz</label>
+            <input type="password" id="sifre" min="12">
+        </p>
+
+        <p>
+            <label for="number">Deneyim</label>
+            <input type="number" id="number" name="numara">
+        </p>
+
+
+        <p>
+            <label for="ara">Search</label>
+            <input type="search" name="ara" id="ara">
+        </p>
+
+
+        <p>
+            <input type="button" value="Gonder">
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </p>
+
+        
+        <p>
+            <label >Hobileriniz</label> <br>
+            
+            <input type="checkbox" name="futbol" value="futbol">
+            <label for="futbol">futbol</label><br>
+
+            <input type="checkbox" name="basketbol" value="basketbol" checked>
+            <label for="basketbol" id="basketbol">basketbol</label>
+        </p>
+
+        <p>
+            <label for="cinsiyet">Cinsiyet</label><br>
+
+            <label for="erkek">erkek</label>
+            <input type="radio" name="cinsiyet" id="erkek"><br>
+
+            <label for="kadin">kadin</label>
+            <input type="radio" name="cinsiyet" id="kadin">
+        </p>
+
+        
+        <p>
+            <label for="sevilen renk">Sevilen renk</label><br>
+
+            <label for="mavi">mavi</label>
+            <input type="radio" name="sevilen renk" id="mavi"><br>
+
+            <label for="kirmizi">kirmizi</label>
+            <input type="radio" name="sevilen renk" id="kirmizi">
+        </p>
+
+        <p>
+            <label for="avatar">avatar</label>
+            <input type="file" name="avatar" id="avatar">
+        </p>
+
+        <p>
+            <label for="dogum_yeri">dogum yeri</label><br>
+
+            <select name="dogum" id="dogum_yeri" >
+                <option value="1">adana</option>
+                <option value="2">adiyaman</option>
+                <option value="3">agri</option>
+
+
+            </select>
+        </p>
+
+        <p>
+            <label for="adres">Adres</label><br>
+            <textarea name="adres" id="adres" cols="30" rows="10"></textarea><br>
+
+        </p>
+
+
+        <div>div yazi 1</div>
+        <div>div yazi 2</div>
+        <span>span yazi 1 </span>
+        <span>span yazi 2</span>
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
